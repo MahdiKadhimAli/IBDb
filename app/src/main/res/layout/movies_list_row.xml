@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:focusable="true"
+     android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_marginBottom="15sp"
+         app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="173dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="202dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mytitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/ibm_plex_serif_bold"
+                    android:text="title"
+                    android:textColor="#222222"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mygenre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/ibm_plex_sans"
+                    android:text="genre"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/myyear"
+                    android:layout_width="179dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/ibm_plex_sans"
+                    android:text="year"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#999999"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/myimage"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="-81dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
